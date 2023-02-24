@@ -30,4 +30,10 @@ describe('Test Faktorial', () => {
     cy.get('#hitung').click()
     cy.contains('Please enter an integer').should('exist')
   })
+  it('Input Alphabet', () => {
+    cy.visit('https://qa.putraprima.id/')
+    cy.get('input').type('A')
+    cy.get('#hitung').click()
+    cy.contains('Please enter an integer').should('exist')
+  })
 })
